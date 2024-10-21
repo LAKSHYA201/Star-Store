@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("node:path");
-const assetPath = path.join(__dirname, "public");
+const assetPath = path.join(__dirname, "/public");
 const { dataBaseCheck } = require("./db/queries");
 const controllers = require("./controllers/main");
 app.use(express.static(assetPath));
@@ -11,15 +11,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", controllers.getCategoriesNames);
 
-app.get("/aircrafts", (req, res) => {
-  res.send("aircraft page");
-});
-app.get("/movies", (req, res) => {
-  res.send("movies");
-});
-app.get("/devices", (req, res) => {
-  res.send("devices");
-});
+app.get("/aircrafts", controllers.getAircraftItems);
+app.get("/movies", controllers.getMovieItems);
+app.get("/devices", controllers.getDeviceItems);
+app.get("/aircrafts/add", controllers.getAddAircraft);
 
 app.listen(3000, () => {
   console.log("Port 3000");

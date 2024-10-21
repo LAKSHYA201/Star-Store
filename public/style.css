@@ -63,3 +63,52 @@ h3 {
 .categoriesHeader {
   margin-bottom: 10vh;
 }
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+.addCategory {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  height: 45px;
+  width: 45px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.itemsPage {
+  background-image: linear-gradient(to top left, black, rgb(45, 0, 68));
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.itemHolder {
+  height: 10vh;
+  width: 15vw;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+  background-image: linear-gradient(to top left, black, rgb(109, 0, 163));
+  color: black;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.movieItemHolder {
+  height: 45vh;
+  width: 15vw;
+  display: grid;
+  grid-template-rows: 7fr 3fr;
+  background-image: linear-gradient(to top left, black, rgb(109, 0, 163));
+  color: black;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+img {
+  height: 100%;
+  width: 100%;
+}

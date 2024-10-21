@@ -23,11 +23,13 @@
       </div>
       <%});%>
     </div>
-    <div class="homePage">
-      <h2>
-        Young Padawan! This is the homepage for the STAR SToRE. Have a look at
-        the inventory items while you are here.
-      </h2>
+    <div class="itemsPage">
+      <%aircrafts.forEach((aircraft,index)=>{%>
+      <div class="itemHolder">
+        <img src="<%=images[index].img%>" />
+        <h3><%=aircraft.name%></h3>
+      </div>
+      <%});%>
     </div>
   </body>
 </html>
