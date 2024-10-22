@@ -27,7 +27,12 @@
       <%aircrafts.forEach((aircraft,index)=>{%>
       <div class="itemHolder">
         <img src="<%=images[index].img%>" />
-        <h3><%=aircraft.name%></h3>
+        <div class="idkHolder">
+          <h3><%=aircraft.name%></h3>
+          <a href="/aircrafts/delete/<%=id[index].id%>"
+            ><button class="removeBtn">x</button></a
+          >
+        </div>
       </div>
       <%});%>
     </div>

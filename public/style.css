@@ -54,6 +54,7 @@ a:active {
 a:hover {
   cursor: pointer;
 }
+
 h2,
 h3 {
   color: white;
@@ -71,12 +72,13 @@ h3 {
 }
 .addCategory {
   border-radius: 50%;
-  background-color: red;
+  background-image: linear-gradient(to bottom right, red, maroon);
   color: white;
   height: 45px;
   width: 45px;
   font-size: 40px;
   font-weight: 400;
+  cursor: pointer;
 }
 .itemsPage {
   background-image: linear-gradient(to top left, black, rgb(45, 0, 68));
@@ -111,4 +113,62 @@ h3 {
 img {
   height: 100%;
   width: 100%;
+}
+form {
+  padding-left: 100px;
+  color: white;
+  padding-top: 3vh;
+}
+.addPage h1 {
+  color: white;
+  font-family: starWars;
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
+input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  text-shadow: 0 0 4px #ffffff;
+  height: 30px;
+  width: 70px;
+  font-size: large;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+label {
+  font-family: starWars;
+}
+.addPage {
+  background-image: url(../addPageBG.webp);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+}
+.idkHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.removeBtn {
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 92),
+    rgb(91, 0, 156)
+  );
+  color: white;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

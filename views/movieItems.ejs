@@ -27,7 +27,12 @@
       <%movies.forEach((movie,index)=>{%>
       <div class="movieItemHolder">
         <img src="<%=images[index].img%>" />
-        <h3><%=movie.name%></h3>
+        <div class="idkHolder">
+          <h3><%=movie.name%></h3>
+          <a href="/movies/delete/<%=id[index].id%>"
+            ><button class="removeBtn">x</button></a
+          >
+        </div>
       </div>
       <%});%>
     </div>
