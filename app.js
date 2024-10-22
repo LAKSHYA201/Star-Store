@@ -23,6 +23,6 @@ app.get("/aircrafts/delete/:id", controllers.deleteAircraftItem);
 app.get("/devices/delete/:id", controllers.deleteDeviceItem);
 app.get("/movies/delete/:id", controllers.deleteMovieItem);
 
-app.listen(3000, () => {
-  console.log("Port 3000");
+app.listen(8000, () => {
+  console.log("Port 8000");
 });
